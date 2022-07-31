@@ -1,0 +1,137 @@
+{
+    // Place your snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    // 
+    "mine ApexPage": {
+        "prefix": "macp",
+        "body": [
+            "<template>",
+            "  <ApexPage :isScroll=\"true\" title=\"标题$1\" :isBack=\"true\" :jssdk=\"false\" :showHeader=\"true\">",
+            "  </ApexPage>",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "import ApexPage from \"widgets-apex/apex-page/apex-page.vue\";",
+            "import { Component, Vue } from \"vue-property-decorator\";",
+            "",
+            "interface IpageParams {",
+            "}",
+            "",
+            "@Component({",
+            "  components: {",
+            "    ApexPage",
+            "  }",
+            "})",
+            "export default class ${TM_FILENAME_BASE} extends Vue {",
+            "  // =================== 私有属性 =====================",
+            "  pageParams!: IpageParams;",
+            "  // =================== 生命周期 =====================",
+            "  onLoad(d: IpageParams) {",
+            "    this.pageParams = d;",
+            "    console.log(\"页面参数: \", this.pageParams);",
+            "  }",
+            "  destroyed() {}",
+            "  // =================== 私有方法 =====================",
+            "}",
+            "</script>",
+            "",
+            "<style scoped lang=\"scss\">",
+            "",
+            "</style>",
+            ""
+        ],
+        "description": "uni Apex页面模板"
+    },
+    "mine Template": {
+        "prefix": "macc",
+        "body": [
+            "<template>",
+            "  <view>",
+            "    $1",
+            "  </view>",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "import { Component, Prop, Vue } from \"vue-property-decorator\";",
+            "",
+            "@Component({",
+            "  // 所有组件请导入，方便后期维护",
+            "  components: { }",
+            "})",
+            "export default class test extends Vue {",
+            "  // =================== 组件属性(请做好备注) =====================",
+            "",
+            "  // =================== 私有属性(请做好备注) =====================",
+            "",
+            "  // =================== 生命周期(不能使用箭头函数) =====================",
+            "  created() {",
+            "    // 对data数据赋值,挂载监听器等",
+            "  }",
+            "  mounted() {",
+            "    // 实例被挂载后调用, 一般在这里发起请求",
+            "  }",
+            "  destroyed() {",
+            "    // 一般销毁一些实例，例如监听器",
+            "  }",
+            "  // =================== 私有方法(不能使用箭头函数) =====================",
+            "}",
+            "</script>",
+            "",
+            "<!-- 设置样式 -->",
+            "<style scoped lang=\"scss\">",
+            "",
+            "</style>",
+            "",
+            ""
+        ],
+        "description": "uni Apex组件模板"
+    },
+    "Add RedBorder": {
+        "prefix": "redborder",
+        "body": [
+            "border: 1px solid #f00;"
+        ],
+        "description": "Add a red border to the DOM for easy viewing"
+    },
+    "uni-vue3 page": {
+        "prefix": "v3p",
+        "body": [
+            "<template>",
+            "  $1",
+            "</template>",
+            "    ",
+            "<script lang='ts' setup>",
+            "import { onMounted, reactive, toRefs } from \"vue\";",
+            "import { onLoad } from \"@dcloudio/uni-app\";",
+            "// ===================== 私有属性 =====================",
+            "",
+            "// ===================== 生命周期 =====================",
+            "onLoad((pageParams) => {",
+            "  console.info(\"页面参数:\", pageParams);",
+            "});",
+            "",
+            "onMounted(() => {});",
+            "// ===================== 私有方法 =====================",
+            "</script>",
+            "    ",
+            "<style lang=\"scss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "uni vue3 页面模板"
+    }
+}

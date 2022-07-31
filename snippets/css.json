@@ -1,0 +1,9 @@
+{
+    "Add RedBorder": {
+        "prefix": "redborder",
+        "body": [
+            "border: 1px solid #f0f;"
+        ],
+        "description": "Add a red border to the DOM for easy viewing"
+    }
+}
