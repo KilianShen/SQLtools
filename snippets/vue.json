@@ -17,7 +17,7 @@
     // }
     // 
     "mine ApexPage": {
-        "prefix": "macp",
+        "prefix": "acp",
         "body": [
             "<template>",
             "  <ApexPage :isScroll=\"true\" title=\"标题$1\" :isBack=\"true\" :jssdk=\"false\" :showHeader=\"true\">",
@@ -57,7 +57,7 @@
         "description": "uni Apex页面模板"
     },
     "mine Template": {
-        "prefix": "macc",
+        "prefix": "acc",
         "body": [
             "<template>",
             "  <view>",
@@ -69,7 +69,6 @@
             "import { Component, Prop, Vue } from \"vue-property-decorator\";",
             "",
             "@Component({",
-            "  // 所有组件请导入，方便后期维护",
             "  components: { }",
             "})",
             "export default class test extends Vue {",
@@ -114,8 +113,8 @@
             "  $1",
             "</template>",
             "    ",
-            "<script lang='ts' setup>",
-            "import { onMounted, reactive, toRefs } from \"vue\";",
+            "<script lang=\"ts\" setup>",
+            "import { onMounted, reactive } from \"vue\";",
             "import { onLoad } from \"@dcloudio/uni-app\";",
             "// ===================== 私有属性 =====================",
             "",

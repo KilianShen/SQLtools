@@ -19,11 +19,22 @@
 | Syntax | Description |
 | ----------- | ----------- |
 | req | Apex封装请求函数 |
+| suc | success:()=>{},fail:()=>{} |
 
 ### scss\less\scc
 | Syntax | Description |
 | ----------- | ----------- |
 | redborder | 添加边框 |
 
+### console
+| Syntax | Description |
+| ----------- | ----------- |
+| clo | console.log("obj",obj); |
+| clj | console.log("obj\n",JSON.stringify(obj,null,2)); |
+| cer | console.error("err:",err);|
+
 Enjoy!
+
+## 发布
+> vsce publish
 

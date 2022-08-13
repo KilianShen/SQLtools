@@ -2,3 +2,4 @@ node_modules/.yarn-integrity
 node_modules/
 *.vsix
 *.lock
+dist/
