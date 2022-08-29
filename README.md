@@ -38,3 +38,5 @@ Enjoy!
 ## 发布
 > vsce publish
 
+## 代码片段生成
+[snippet-generator](https://snippet-generator.app/)

@@ -6,7 +6,7 @@
             "    const res = await RequestUtils.POST(\"/\", {});",
             "    try {",
             "      if (res.isOk()) {",
-            "        // todo",
+            "        console.log(\"res\", res);",
             "      } else {",
             "        res.toast(res.note || \"请求失败\");",
             "      }",
@@ -18,24 +18,24 @@
         ],
         "description": "APEX 接口请求"
     },
-    "console.log(\"\",)": {
+    "console.log(\"obj\", obj)": {
         "prefix": "clo",
         "body": [
             "console.log(\"${1:obj}\",${1:obj});"
         ],
-        "description": "console.log(\"obj\",obj)"
+        "description": "console.log(\"obj\", obj)"
     },
     "console.log(\"obj\",JSON.stringify(obj,null,2))": {
         "prefix": "clj",
         "body": [
-            "console.log(\"${1:obj}\\n\",JSON.stringify(${1:obj},null,2));"
+            "console.log(\"${1:obj}\\n\", JSON.stringify(${1:obj},null,2));"
         ],
         "description": "打印格式化JSON"
     },
     "console.error(\"err:\", err);": {
         "prefix": "cer",
         "body": [
-            "console.error(\"${1:err}:\",${1:err});"
+            "console.error(\"${1:err}:\", ${1:err});"
         ],
         "description": "console.error(\"err:\", err);"
     },
