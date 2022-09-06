@@ -115,5 +115,26 @@
             "</style>"
         ],
         "description": "uni vue3 页面模板"
+    },
+    "console.log(\"obj\", obj)": {
+        "prefix": "clo",
+        "body": [
+            "console.log(\"${1:obj}\",${1:obj});"
+        ],
+        "description": "打印信息"
+    },
+    "console.log(\"obj\",JSON.stringify(obj,null,2))": {
+        "prefix": "clj",
+        "body": [
+            "console.log(\"${1:obj}\\n\", JSON.stringify(${1:obj},null,2));"
+        ],
+        "description": "打印格式化JSON对象"
+    },
+    "console.error(\"err:\", err);": {
+        "prefix": "cer",
+        "body": [
+            "console.error(\"${1:err}:\", ${1:err});"
+        ],
+        "description": "打印错误信息"
     }
 }

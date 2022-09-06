@@ -23,21 +23,21 @@
         "body": [
             "console.log(\"${1:obj}\",${1:obj});"
         ],
-        "description": "console.log(\"obj\", obj)"
+        "description": "打印信息"
     },
     "console.log(\"obj\",JSON.stringify(obj,null,2))": {
         "prefix": "clj",
         "body": [
             "console.log(\"${1:obj}\\n\", JSON.stringify(${1:obj},null,2));"
         ],
-        "description": "打印格式化JSON"
+        "description": "打印格式化JSON对象"
     },
     "console.error(\"err:\", err);": {
         "prefix": "cer",
         "body": [
             "console.error(\"${1:err}:\", ${1:err});"
         ],
-        "description": "console.error(\"err:\", err);"
+        "description": "打印错误信息"
     },
     "uni 接口调用成功和失败的回调函数": {
         "prefix": "suc",
