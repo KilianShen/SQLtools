@@ -116,6 +116,32 @@
         ],
         "description": "uni vue3 页面模板"
     },
+    "uni-vue3 component": {
+        "prefix": "v3c",
+        "body": [
+            "<template></template>",
+            "",
+            "<script lang=\"ts\" setup>",
+            "import { onMounted, reactive, ref, toRaw } from 'vue';",
+            "",
+            "interface Props {",
+            "  item: IObject;",
+            "}",
+            "// ===================== 私有属性 =====================",
+            "// 对 defineProps() 的响应性解构, 默认值会被编译为等价的运行时选项",
+            "const { item = {} } = defineProps<Props>();",
+            "// ===================== 生命周期 =====================",
+            "onMounted(() => {",
+            "  console.log('item', toRaw(item));",
+            "});",
+            "// ===================== 私有方法 =====================",
+            "</script>",
+            "",
+            "<style lang=\"scss\" scoped></style>",
+            ""
+        ],
+        "description": "uni vue3 组件模板"
+    },
     "console.log(\"obj\", obj)": {
         "prefix": "clo",
         "body": [
