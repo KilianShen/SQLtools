@@ -1,6 +1,6 @@
 # SQLtools README
 
-提供 Vue 2 及 Vue3 快捷代码片段
+提供 Vue 2、Vue3、tsx 快捷代码片段
 
 ## Features
 
@@ -38,6 +38,12 @@
 | clo    | console.log("obj",obj);                          |
 | clj    | console.log("obj\n",JSON.stringify(obj,null,2)); |
 | cer    | console.error("err:",err);                       |
+
+### tsx
+
+| Syntax | Description               |
+| ------ | ------------------------- |
+| rfsc   | rfc with styled-component |
 
 Enjoy!
 

@@ -3,7 +3,7 @@
   "displayName": "SQLtools",
   "publisher": "KilianShen",
   "description": "create because of lazy",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "icon": "SQLtools.png",
   "engines": {
     "vscode": "^1.69.0"
@@ -38,6 +38,10 @@
       {
         "language": "less",
         "path": "./snippets/css.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescriptreact.json"
       }
     ]
   },

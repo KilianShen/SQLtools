@@ -1,0 +1,30 @@
+{
+  "rfc with styled-component": {
+    "prefix": "rfcs",
+    "body": [
+      "import React from \"react\";",
+      "import styled from \"styled-components\";",
+      "",
+      "interface Props {}",
+      "",
+      "const ${TM_FILENAME_BASE}: React.FC<Props> = () => {",
+      "  // =============== Hooks ===============",
+      "",
+      "  // =============== Function ==================",
+      "",
+      "  // =============== Styled-Components =============",
+      "  const StyledComponent = styled.div``;",
+      "",
+      "  return (",
+      "    <StyledComponent>",
+      "      <p>${TM_FILENAME_BASE}</p>$1",
+      "    </StyledComponent>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};",
+      ""
+    ],
+    "description": "rfc with styled-component"
+  }
+}
